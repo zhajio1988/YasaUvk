@@ -74,5 +74,6 @@ YASAsim -b jvs_clk_rst -t jvs_clk_rst_group_basic_test
 ```
 
 # Disclaimer:
-[jarvisuk](https://github.com/shady831213/jarvisuk) is "Just A Really Very Impressive Systemverilog UVM Kit" from shady831213.
+[jarvisuk](https://github.com/shady831213/jarvisuk) is "UVM Verification Kit" from shady831213.
+
 More info please see his github https://github.com/shady831213
