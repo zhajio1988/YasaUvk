@@ -15,10 +15,7 @@ vcs
 5. `%> source bin/bootenv.csh`
 6. `%> YASAsim -b jvs_memory -t jvs_memory_showcase`
 
-# test
-```
-YASAsim -b jvs_memory -t jvs_memory_showcase
-```
+More YASA script usage ref: [YASA](https://github.com/zhajio1988/YASA)
 
 # memory allocator
 + support random or fix address malloc(), free()
