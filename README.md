@@ -4,10 +4,16 @@ Just A Really Very Impressive Systemverilog UVM Kit
 # tools
 vcs
 
-[YASA](https://github.com/shady831213/jarvism)
+[YASA](https://github.com/zhajio1988/YASA)
 
 # usage
-`source bin/bootenv.csh` at YasaUvk home dir
+## Using git
+1. `%> git clone https://github.com/zhajio1988/YasaUvk.git`
+2. `%> cd YasaUvk/bin`
+3. `%> git clone https://github.com/zhajio1988/YASA.git`
+4. `%> cd ../`
+5. `%> source bin/bootenv.csh`
+6. `%> YASAsim -b jvs_memory -t jvs_memory_showcase`
 
 # test
 ```
@@ -67,3 +73,6 @@ YASAsim -b jvs_reg -t jvs_register_region_test
 YASAsim -b jvs_clk_rst -t jvs_clk_rst_group_basic_test
 ```
 
+# Disclaimer:
+[jarvisuk](https://github.com/shady831213/jarvisuk) is "Just A Really Very Impressive Systemverilog UVM Kit" from shady831213.
+More info please see his github https://github.com/shady831213
