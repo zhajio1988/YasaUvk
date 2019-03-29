@@ -4,18 +4,14 @@ Just A Really Very Impressive Systemverilog UVM Kit
 # tools
 vcs
 
-[jarvism](https://github.com/shady831213/jarvism)
+[YASA](https://github.com/shady831213/jarvism)
 
 # usage
-set $JVSUK_HOME to jarvisuk home dir.
-
-add $JVSUK_HOME/jvs.f to your filelist.
+`source bin/bootenv.csh` at YasaUvk home dir
 
 # test
 ```
-source jarvism_cfg/jarvism_setup.sh
-jarvism run_group jvs
-
+YASAsim -b jvs_memory -t jvs_memory_showcase
 ```
 
 # memory allocator
@@ -25,8 +21,7 @@ jarvism run_group jvs
 
 ## test
 ```
-source jarvism_cfg/jarvism_setup.sh
-jarvism run_test jvs_memory jvs_memory_showcase -seed 1
+YASAsim -g jvs_memory
 ```
 
 # interrupt
@@ -39,18 +34,15 @@ jarvism run_test jvs_memory jvs_memory_showcase -seed 1
 ## test
 pin interrupt
 ```
-source jarvism_cfg/jarvism_setup.sh
-jarvism run_test jvs_memory jvs_int_simple_test
+YASAsim -b jvs_irq -t jvs_int_simple_test
 ```
 msi irq
 ```
-source jarvism_cfg/jarvism_setup.sh
-jarvism run_test jvs_memory jvs_msi_irq_test
+YASAsim -b jvs_irq -t jvs_msi_irq_test
 ```
 soft irq
 ```
-source jarvism_cfg/jarvism_setup.sh
-jarvism run_test jvs_memory jvs_soft_irq_test
+YASAsim -b jvs_irq -t jvs_soft_irq_test
 ```
 
 
@@ -61,8 +53,7 @@ jarvism run_test jvs_memory jvs_soft_irq_test
 + thread-safe
 ## test
 ```
-source jarvism_cfg/jarvism_setup.sh
-jarvism run_test jvs_register_region jvs_register_region_test -seed 1
+YASAsim -b jvs_reg -t jvs_register_region_test
 ```
 
 # clock reset group
@@ -73,7 +64,6 @@ jarvism run_test jvs_register_region jvs_register_region_test -seed 1
 + support sync and async reset
 ## test
 ```
-source jarvism_cfg/jarvism_setup.sh
-jarvism run_test jvs_clk_rst_group jvs_clk_rst_group_basic_test -seed 1 -wave
+YASAsim -b jvs_clk_rst -t jvs_clk_rst_group_basic_test
 ```
 
