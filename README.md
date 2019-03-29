@@ -3,7 +3,7 @@ Just A Really Very Impressive Systemverilog UVM Kit from [shady831213]( https://
 
 Use this kits for your bug free testbench
 # tools
-vcs
+Synopsys VCS
 
 [YASA](https://github.com/zhajio1988/YASA)
 
