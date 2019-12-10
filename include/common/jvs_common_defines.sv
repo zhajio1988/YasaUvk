@@ -9,8 +9,8 @@ function string get_wave_name(); \
    end \
    else begin \
       wave_name = "test"; \
-      return wave_name; \
    end \
+   return wave_name; \
 endfunction \
 initial begin \
  `ifdef DUMP_FSDB \
